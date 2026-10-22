@@ -2,122 +2,118 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BusDirect</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BusDirect</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<header class="bg-[#071536]/95 text-white px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">BusDirect</h1>
-    <nav>
-        <a href="#reservation" class="mr-5">Réservation</a>
-        <a href="#tickets">Tickets</a>
-    </nav>
+     <body>
+     <header class="bg-[#071536]/95 text-white px-6 py-4 flex justify-between items-center">
+<h1 class="text-2xl font-bold">BusDirect</h1>
+<nav><a href="#reservation" class="mr-5">Réservation</a><a href="#tickets">Tickets</a></nav>
 </header>
-
 <main class="max-w-7xl mx-auto p-5">
-
-    <section class="panel flex flex-wrap justify-between items-center gap-4 mb-5">
-        <div class="flex items-center gap-6">
-            <span class="text-2xl"></span>
-            <strong>Safi</strong>
-            <span class="text-blue-400 text-2xl">→</span>
-            <strong>Marrakech</strong>
-            <span class="bg-blue-900/70 px-3 py-2 rounded text-sm">80 DH / place</span>
-        </div>
-        <p>🔵 Libre　 🟣 Occupé</p>
-    </section>
-
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
-
-        <section class="panel lg:col-span-3">
-            <div class="flex flex-wrap justify-between items-center gap-3 border-b border-blue-400/30 pb-4 mb-5">
-                <h2 class="text-xl font-bold"> Plan du bus</h2>
-                <p>20 places totales　 <span class="text-teal-300">● 17 disponibles</span></p>
-            </div>
-
-            <p class="text-center mb-5">⬆ Avant du bus</p>
-
-            <div class="grid grid-cols-4 gap-3">
-                <div class="seat">01<small>Libre</small></div>
-                <div class="seat">02<small>Libre</small></div>
-                <div class="seat occupied">03<small>Occupé</small></div>
-                <div class="seat">04<small>Libre</small></div>
-                <div class="seat">05<small>Libre</small></div>
-                <div class="seat">06<small>Libre</small></div>
-                <div class="seat">07<small>Libre</small></div>
-                <div class="seat">08<small>Libre</small></div>
-                <div class="seat">09<small>Libre</small></div>
-                <div class="seat occupied">10<small>Occupé</small></div>
-                <div class="seat">11<small>Libre</small></div>
-                <div class="seat">12<small>Libre</small></div>
-                <div class="seat">13<small>Libre</small></div>
-                <div class="seat">14<small>Libre</small></div>
-                <div class="seat">15<small>Libre</small></div>
-                <div class="seat occupied">16<small>Occupé</small></div>
-                <div class="seat">17<small>Libre</small></div>
-                <div class="seat">18<small>Libre</small></div>
-                <div class="seat">19<small>Libre</small></div>
-                <div class="seat">20<small>Libre</small></div>
-            </div>
-        </section>
-
-        <div class="lg:col-span-2 space-y-5">
-
-            <section id="reservation" class="panel">
-                <h2 class="text-xl font-bold border-b border-blue-400/30 pb-3 mb-4"> Réserver une place</h2>
-                <form>
-                    <label>Passager</label>
-                    <input type="text" placeholder="Ex : Thomas Martin">
-
-                    <label>Siège sélectionné</label>
-                    <select>
-                        <option>-- Choisir un siège --</option>
-                        <option>01</option><option>02</option><option>04</option>
-                        <option>05</option><option>06</option><option>07</option>
-                        <option>08</option><option>09</option><option>11</option>
-                        <option>12</option><option>13</option><option>14</option>
-                        <option>15</option><option>17</option><option>18</option>
-                        <option>19</option><option>20</option>
-                    </select>
-
-                    <button type="button" class="btn">Confirmer</button>
-                </form>
-            </section>
-
-            <section class="panel">
-                <h2 class="text-xl font-bold border-b border-blue-400/30 pb-3 mb-4"> Modifier une place</h2>
-                <form>
-                    <label>Passager existant</label>
-                    <select><option>-- Choisir un passager --</option></select>
-
-                    <label>Nouveau nom</label>
-                    <input type="text" placeholder="Nom du passager">
-
-                    <button type="button" class="btn">Modifier</button>
-                </form>
-            </section>
-
-            <section id="tickets" class="panel">
-                <h2 class="text-xl font-bold border-b border-blue-400/30 pb-3 mb-4"> Supprimer une réservation</h2>
-                <form>
-                    <label>Passager réservé</label>
-                    <select><option>-- Choisir un passager --</option></select>
-
-                    <button type="button" class="btn bg-rose-600">Supprimer</button>
-                </form>
-            </section>
-
-        </div>
-    </div>
+<section class="panel flex flex-wrap justify-between items-center gap-4 mb-5">
+<div class="flex items-center gap-6">
+    <strong>Safi</strong>
+    <span class="text-blue-400 text-2xl">→</span>
+    <strong>Marrakech</strong>
+    <span class="bg-blue-900/70 px-3 py-2 rounded text-sm">80 DH / place</span>
+</div>
+<p>🔵 Libre　 🟣 Occupé</p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+<section class="panel lg:col-span-3">
+<div class="flex flex-wrap justify-between items-center gap-3 border-b border-blue-400/30 pb-4 mb-5">
+<h2 class="text-xl font-bold">Plan du bus</h2>
+<p>20 places totales <span class="text-teal-300">● <span id="nombreLibres">17</span> disponibles</span></p>
+</div>
+<p class="text-center mb-5">Avant du bus</p>
+<div class="grid grid-cols-4 gap-3" id="planSieges">
+<div class="seat" data-seat="1">01<small>Libre</small></div>
+<div class="seat" data-seat="2">02<small>Libre</small></div>
+<div class="seat" data-seat="3">03<small>Libre</small></div>
+<div class="seat" data-seat="4">04<small>Libre</small></div>
+<div class="seat" data-seat="5">05<small>Libre</small></div>
+<div class="seat" data-seat="6">06<small>Libre</small></div>
+<div class="seat" data-seat="7">07<small>Libre</small></div>
+<div class="seat" data-seat="8">08<small>Libre</small></div>
+<div class="seat" data-seat="9">09<small>Libre</small></div>
+<div class="seat" data-seat="10">10<small>Libre</small></div>
+<div class="seat" data-seat="11">11<small>Libre</small></div>
+<div class="seat" data-seat="12">12<small>Libre</small></div>
+<div class="seat" data-seat="13">13<small>Libre</small></div>
+<div class="seat" data-seat="14">14<small>Libre</small></div>
+<div class="seat" data-seat="15">15<small>Libre</small></div>
+<div class="seat" data-seat="16">16<small>Libre</small></div>
+<div class="seat" data-seat="17">17<small>Libre</small></div>
+<div class="seat" data-seat="18">18<small>Libre</small></div>
+<div class="seat" data-seat="19">19<small>Libre</small></div>
+<div class="seat" data-seat="20">20<small>Libre</small></div>
+</div>
+</section>
+<div class="lg:col-span-2 space-y-5">
+<section id="reservation" class="panel">
+<h2 class="text-xl font-bold border-b border-blue-400/30 pb-3 mb-4">Réserver une place</h2>
+<form id="formulaire1">
+<label for="nomdepassager">Passager</label>
+<input type="text" placeholder="Ex : Thomas Martin" id="nomdepassager">
+<label for="seatSelect">Siège sélectionné</label>
+<select id="seatSelect">
+<option value="">-- Choisir un siège --</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+</select>
+<button type="submit" class="btn" id="confirmer">Confirmer</button>
+<p id="message" role="status" aria-live="polite"></p>
+</form>
+</section>
+<section class="panel">
+<h2 class="text-xl font-bold border-b border-blue-400/30 pb-3 mb-4">Modifier une place</h2>
+<form id="formulaireModification">
+<label for="passagerExistant">Passager existant</label>
+<select id="passagerExistant"><option value="">-- Choisir un passager --</option></select>
+<label for="nouveauNom">Nouveau nom</label>
+<input type="text" id="nouveauNom" placeholder="Nom du passager">
+<label for="nouveauSiege">Nouveau siège</label>
+<select id="nouveauSiege"><option value="">-- Garder le siège actuel --</option></select>
+<button type="submit" class="btn">Modifier</button>
+</form>
+</section>
+<section id="tickets" class="panel">
+<h2 class="text-xl font-bold border-b border-blue-400/30 pb-3 mb-4">Supprimer une réservation</h2>
+<form id="formulaireSuppression">
+<label for="passagerSuppression">Passager réservé</label>
+<select id="passagerSuppression"><option value="">-- Choisir un passager --</option></select>
+<button type="submit" class="btn bg-rose-600">Supprimer</button>
+</form>
+</section>
+<section class="panel">
+<h2 class="text-xl font-bold mb-4">Statistiques</h2>
+<p>Sièges occupés : <span id="nombreOccupes">3</span></p>
+<p>Sièges libres : <span id="compteurLibres">17</span></p>
+<p>Chiffre d'affaires : <span id="chiffreAffaire">0 DH</span></p>
+</section>
+</div>
+</div>
 </main>
-
-<footer class="bg-[#071536]/95 text-white text-center p-5 mt-5">
-    © 2026 BusDirect
-</footer>
-
+<footer class="bg-[#071536]/95 text-white text-center p-5 mt-5">© 2026 BusDirect</footer>
+<script src="script.js"></script>
 </body>
 </html>
